@@ -76,7 +76,7 @@ button:hover {
 #result {
     color: #333;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     word-wrap: break-word;
 }
@@ -119,7 +119,7 @@ button:hover {
     }
 
     #result {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .tutorial {
