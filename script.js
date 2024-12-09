@@ -14,12 +14,12 @@ function calculateShare() {
     
     // Calculate how many units are needed to meet the target
     const targetUnits = (targetShare / 100) * totalShelfSpace;
-    const unitsDifference = targetUnits - brandSpace;
+    const unitsNeeded = targetUnits - brandSpace;
     
     let resultText = `Current Share: ${currentShare.toFixed(2)}%<br>`;
     resultText += `Target Share: ${targetShare}%<br>`;
     resultText += `Difference from Target: ${difference.toFixed(2)}%<br>`;
-    resultText += `Units Needed: ${unitsDifference.toFixed(2)} units`;
+    resultText += `Units Needed: ${unitsNeeded.toFixed(2)} units`;
 
     resultElement.innerHTML = resultText;
 }
