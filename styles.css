@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f5f5f5;
@@ -7,38 +9,40 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #333;
 }
 
 .calculator {
     background: #ffffff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     max-width: 400px;
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
 }
 
 h1 {
-    color: #333;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
 label {
     color: #666;
     margin-bottom: 5px;
     display: block;
+    font-size: 14px;
 }
 
 input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
     background-color: #f9f9f9;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 button {
@@ -66,14 +70,23 @@ button:hover {
 
 @media (max-width: 480px) {
     .calculator {
-        padding: 20px;
-    }
-
-    input, button {
-        font-size: 16px;
+        padding: 15px;
+        width: 95%; /* More width for small screens */
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    label, input, button, #result {
+        font-size: 16px; /* Increase font size for better readability */
+    }
+
+    input, button {
+        padding: 10px; /* Adjust padding for touch interaction */
+    }
+
+    button {
+        margin-top: 10px;
     }
 }
