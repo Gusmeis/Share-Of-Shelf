@@ -5,7 +5,7 @@ function calculateShare() {
     const resultElement = document.getElementById('result');
 
     if (totalShelfSpace <= 0 || brandSpace < 0 || targetShare < 0 || targetShare > 100) {
-        resultElement.textContent = "Please enter valid numbers.";
+        resultElement.innerHTML = '<h2>Results:</h2>Please enter valid numbers.';
         return;
     }
 
@@ -16,10 +16,11 @@ function calculateShare() {
     const targetUnits = (targetShare / 100) * totalShelfSpace;
     const unitsNeeded = targetUnits - brandSpace;
     
-    let resultText = `Current Share: ${currentShare.toFixed(2)}%<br>`;
-    resultText += `Target Share: ${targetShare}%<br>`;
-    resultText += `Difference from Target: ${difference.toFixed(2)}%<br>`;
-    resultText += `Units Needed: ${unitsNeeded.toFixed(2)} units`;
+    let resultText = '<h2>Results:</h2>';
+    resultText += `<p>Current Share: ${currentShare.toFixed(2)}%</p>`;
+    resultText += `<p>Target Share: ${targetShare}%</p>`;
+    resultText += `<p>Difference from Target: ${difference.toFixed(2)}%</p>`;
+    resultText += `<p>Units Needed: ${unitsNeeded.toFixed(2)} units</p>`;
 
     resultElement.innerHTML = resultText;
 }
