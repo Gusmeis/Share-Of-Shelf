@@ -18,7 +18,6 @@ function calculateShare() {
     
     let resultText = '<h2>Results:</h2>';
     resultText += `<p>Current Share: ${currentShare.toFixed(2)}%</p>`;
-    resultText += `<p>Target Share: ${targetShare}%</p>`;
     resultText += `<p>Difference from Target: ${difference.toFixed(2)}%</p>`;
     resultText += `<p>Units Needed: ${unitsNeeded.toFixed(2)} units</p>`;
 
