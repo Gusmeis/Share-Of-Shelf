@@ -19,7 +19,7 @@ function calculateShare() {
     let resultText = `Current Share: ${currentShare.toFixed(2)}%<br>`;
     resultText += `Target Share: ${targetShare}%<br>`;
     resultText += `Difference from Target: ${difference.toFixed(2)}%<br>`;
-    resultText += `Brand Space Difference: ${unitsDifference.toFixed(2)} units`;
+    resultText += `Units Needed: ${unitsDifference.toFixed(2)} units`;
 
     resultElement.innerHTML = resultText;
 }
